@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.16)
 
 project(HighPerformanceWebServer
-    VERSION 0.1.0
+    VERSION 0.2.0
     LANGUAGES CXX
 )
 
@@ -11,6 +11,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_executable(webserver
     src/main.cpp
+    src/config/Config.cpp
+    src/server/WebServer.cpp
 )
 
 target_include_directories(webserver PRIVATE
@@ -22,4 +24,3 @@ target_compile_options(webserver PRIVATE
     -Wextra
     -Wpedantic
 )
-

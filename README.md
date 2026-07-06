@@ -24,17 +24,24 @@ cmake --build build
 ./build/webserver config/server.conf
 ```
 
-Expected v0.1 output:
+Expected v0.2 output:
 
 ```text
-HighPerformanceWebServer v0.1.0
 Config file: config/server.conf
-Listen port: 8080
 Thread count: 4
 Web root: ./webroot
 Database: ./data/server.db
 Log file: ./logs/server.log
-Project skeleton is ready.
+HighPerformanceWebServer v0.2.0
+Listen port: 8080
+Blocking socket server is running.
+Open http://127.0.0.1:8080/ in your browser.
+```
+
+Then visit:
+
+```bash
+curl http://127.0.0.1:8080/
 ```
 
 ## Roadmap
@@ -48,4 +55,3 @@ Project skeleton is ready.
 7. v0.7: Thread pool.
 8. v0.8: epoll non-blocking IO.
 9. v1.0: Benchmark report and course delivery.
-
