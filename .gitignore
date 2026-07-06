@@ -1,0 +1,23 @@
+# Build outputs
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# CLion / JetBrains
+.idea/
+
+# Runtime files
+logs/*.log
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
